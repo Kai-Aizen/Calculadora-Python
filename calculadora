@@ -1,0 +1,18 @@
+operador = input()
+
+print("digite um segundo numero")
+numero2 = int(input())
+
+if operador == '+':
+    resultado == numero1 + numero2
+elif operador == '-':
+    resultado == numero1 - numero2
+    print(resulatado)
+elif operador == '*':
+    resultado == numero1 * numero2
+    print(resultado)
+elif operador == '/':
+    resultado = numero1 / numero2
+    print(resultado)
+else:
+    print('operacao incorreto')
