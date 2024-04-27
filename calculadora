@@ -1,18 +1,24 @@
-operador = input()
+operador = input("Digite o operador (+, -, *, /): ")
 
-print("digite um segundo numero")
+print("Digite o primeiro número:")
+numero1 = int(input())
+print("Digite o segundo número:")
 numero2 = int(input())
 
 if operador == '+':
-    resultado == numero1 + numero2
+    resultado = numero1 + numero2
+    print(resultado)
 elif operador == '-':
-    resultado == numero1 - numero2
-    print(resulatado)
+    resultado = numero1 - numero2
+    print(resultado)
 elif operador == '*':
-    resultado == numero1 * numero2
+    resultado = numero1 * numero2
     print(resultado)
 elif operador == '/':
-    resultado = numero1 / numero2
-    print(resultado)
+    if numero2 != 0:  # Verificando se o divisor não é zero
+        resultado = numero1 / numero2
+        print(resultado)
+    else:
+        print("Não é possível dividir por zero!")
 else:
-    print('operacao incorreto')
+    print('Operação incorreta')
